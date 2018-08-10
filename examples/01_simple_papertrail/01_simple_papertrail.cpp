@@ -2,6 +2,8 @@
 //
 // See https://github.com/barakwei/ParticlePapertrail for setup information
 // See https://docs.particle.io/reference/firmware/#logging for the firmware Logging API
+#ifdef EXAMPLE
+
 #include "papertrail.h"
 
 // TODO: Change the host and ports to match yours.
@@ -23,3 +25,5 @@ void loop() {
   Log.error("This is error message");
   delay(5000);
 }
+
+#endif
